@@ -5,7 +5,6 @@ const vagaModel = require('./models/vaga');
 const cursoModel = require('./models/curso');
 const empresaModel = require('./models/empresa');
 const aplicaModel = require('./models/aplica');
-const possuiModel = require('./models/possui');
 const cursoEmpresaModel = require('./models/curso_empresa');
 
 // Criar tabelas do banco de dados
@@ -14,7 +13,6 @@ vagaModel.createVagaTable();
 cursoModel.createCursoTable();
 empresaModel.createEmpresaTable();
 aplicaModel.createAplicaTable();
-possuiModel.createPossuiTable();
 cursoEmpresaModel.createCursoEmpresaTable();
 
 // Outras configurações e middlewares

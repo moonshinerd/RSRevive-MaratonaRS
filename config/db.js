@@ -2,7 +2,7 @@ const sqlite3 = require('sqlite3').verbose();
 const path = require('path');
 
 // Caminho absoluto para o arquivo do banco de dados
-const dbPath = path.resolve(__dirname, '../data/meu-banco-de-dados.db');
+const dbPath = path.resolve(__dirname, '../data/database.db');
 
 // Criar ou abrir o banco de dados
 const db = new sqlite3.Database(dbPath, (err) => {
