@@ -1,17 +1,21 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
 import {
   createBrowserRouter,
   RouterProvider
 } from "react-router-dom";
 
+import { Feed } from './pages/feed/index.jsx';
 import { Landing } from './pages/landing/index.jsx';
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/teste",
     element: <Landing />
+  },
+  {
+    path: "/",
+    element: <Feed />
   }
 ])
 
