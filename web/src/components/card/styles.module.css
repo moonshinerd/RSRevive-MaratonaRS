@@ -1,0 +1,50 @@
+.cardWrapper {
+  display: flex;
+  width: 100%;
+  border-radius: 8px;
+  background-color: var(--cinzaClaro);
+  padding: 6px;
+}
+
+.cardWrapper:nth-child(3n + 1){
+  border: 2px solid var(--verde);
+}
+
+.cardWrapper:nth-child(3n + 2){
+  border: 2px solid var(--vermelho);
+}
+
+.cardWrapper:nth-child(3n + 3){
+  border: 2px solid var(--amarelo);
+}
+
+.cardContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.cardHeader {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.name {
+  font-size: 14px;
+}
+
+.subject {
+  font-size: 13px;
+}
+
+.contents {
+  font-size: 12px;
+  align-self: flex-start;
+}
+
+.link {
+  font-size: 13px;
+}

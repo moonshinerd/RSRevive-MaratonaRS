@@ -1,0 +1,70 @@
+.navButton {
+  flex: 1;
+  outline: 0;
+  border-radius: 6px;
+  padding: 6px 0;
+  color: var(--branco);
+  font-weight: 500;
+  border: 2px solid black;
+  margin-top: 30px;
+  margin-bottom: 16px;
+  font-size: 13px;
+}
+
+.navButton:nth-child(1) {
+  background-color: var(--branco);
+  color: var(--verde);
+  border-color: var(--verde);
+}
+
+.navButton:nth-child(2) {
+  background-color: var(--vermelho);
+  border-color: var(--vermelho);
+}
+
+.navButton:nth-child(3) {
+  background-color: var(--amarelo);
+  border-color: var(--amarelo);
+}
+
+.buttonsWrapper {
+  display: flex;
+  width: 100%;
+  gap: 16px
+}
+
+.filtersWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.input {
+  width: 100%;
+  padding: 6px 0 6px 8px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  border-radius: 6px;
+  background-color: var(--cinzaMedio);
+}
+
+.filtersLinksWrapper {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.filterLink {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.cardsWrapper {
+  margin-top: 24px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 12px;
+}

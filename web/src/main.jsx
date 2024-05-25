@@ -7,6 +7,8 @@ import {
 
 import { Feed } from './pages/feed/index.jsx';
 import { Landing } from './pages/landing/index.jsx';
+import './global.css'
+import './responsive.css'
 
 const router = createBrowserRouter([
   {
