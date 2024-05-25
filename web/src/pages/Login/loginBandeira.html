@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login</title>
+  <style>
+    body {
+      background-image: url('BandeiraRS.jpg');
+      background-size:cover;
+      background-position: center;
+      justify-content: center;
+      min-height: 100vh;
+    }
+    .header {
+  height: 70px;
+  padding: 0; 
+  margin: 0; 
+  background-color: black;
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+}
+
+.logo {
+  margin: 0; 
+  width: 100%; 
+  text-align: center; 
+}
+
+.logo img {
+  width: 200px; 
+  height: 60px; 
+  margin: 0 auto; 
+}
+
+    .container {
+      position: relative;
+      width: 350px;
+      height: 320px;
+      margin: 0 auto;
+      top: 50%;
+      transform: translateY(50%);
+      background-color: transparent;
+      border-radius: 5px;
+      padding: 20px;
+    }
+
+   
+    .login-form {
+      background-color: transparent;
+      padding: 50px;
+      border-radius: 5px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, .2);
+      backdrop-filter:blur(4px);
+    }
+
+    .login-form h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: black;
+    }
+
+    .input-field {
+      margin-bottom: 10px;
+      margin-right: 8px;
+      align-items: center;
+    }
+
+    .input-field label {
+      display: block;
+      color: black;
+    }
+
+    .input-field input {
+      width: 100%;
+      padding: 5px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+    }
+
+    .center {
+      text-align: center;
+    }
+
+    .button {
+      background-color: #0047a3;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo"><img src="RSRevive.png" alt="SOSRS Logo" width="200" height="60"></div>
+      </div>
+  <div class="container">
+    <div class="login-form">
+      <h2 style="color: black;">Bem vindo!</h2>
+      <div class="input-field">
+        <label for="username" style="color: black;">Usuário:</label>
+        <input type="text" id="username" name="username">
+      </div>
+      <div class="input-field">
+        <label for="password" style="color: black;">Senha:</label>
+        <input type="password" id="password" name="password">
+      </div>
+      <div class="center">
+        <button type="submit" class="button">Entrar</button>
+      </div>
+      <div style="margin-top: 15px;" class="links">
+        <a style="border-right: 1px solid black; padding-right: 5px;" href="#">Esqueceu a senha?</a>
+        <a href="#">Não tem cadastro?</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

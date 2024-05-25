@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login</title>
+  <style>
+	.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+}
+    body {
+      background-color: white;
+      color: white;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 80vh;
+    }
+
+    .header {
+      justify-content: space-between;
+      align-items: center;
+	  text-align: center;
+      width: 100%;
+	  height: 60px;
+      padding-top: 10px;
+	  padding-bottom: 10px;
+      background-color: black;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .login-form {
+      background-color: white;
+      padding: 30px;
+      border-radius: 5px;
+      box-shadow: 0px 0px 20px rgba(0, 0, 0, 1);
+    }
+
+    .login-form h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: black;
+    }
+
+    .input-field {
+      margin-bottom: 10px;
+	  margin-right: 8px;
+	  align-items: center;
+    }
+
+    .input-field label {
+      display: block;
+      color: black;
+    }
+
+    .input-field input {
+      width: 100%;
+      padding: 5px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+    }
+
+    .button {
+      background-color: #0047a3;
+      color: white;
+	  align-content: center;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+
+    .footer1 {
+	  height: 50px;
+      background-color: #00a859;
+	  float: left;
+	  position: fixed;
+      bottom: 0;
+      width: 34%;
+    }
+	.footer2 {
+      text-align: center;
+      padding: 10px;
+	  height: 30px;
+      background-color: #ed3238;
+	  position: absolute;
+	  left: 34%;
+      bottom: 0;
+      width: 32%;
+    }
+	.footer3 {
+      text-align: center;
+      padding: 10px;
+	  height: 30px;
+      background-color: #ffcc29;
+	  position: absolute;
+	  right: 0;
+	  bottom: 0;
+      width: 32%;
+	}
+  </style>
+</head>
+<body>
+  <div class="header">
+    <div class="logo"><img src="RSRevive.png" alt="SOSRS Logo" width="200" height="60"></div>
+  </div>
+  <div class="container">
+    <div class="login-form">
+      <h2 style="color: black;">Bem vindo!</h2>
+      <div class="input-field">
+        <label for="username" style="color: black;">Usuário:</label>
+        <input type="text" id="username" name="username">
+      </div>
+      <div class="input-field">
+        <label for="password" style="color: black;">Senha:</label>
+        <input type="password" id="password" name="password">
+      </div>
+     
+     <div class="center">
+         <button type="submit" class="button">Entrar</button>
+     </div>
+      <div style="margin-top: 15px;" class="links">
+        <a style="border-right: 1px solid black; padding-right: 5px;" href="#">Esqueceu a senha?</a>
+        <a href="#">Não tem cadastro?</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer1">
+  </div>
+  <div class="footer2">
+  </div>
+  <div class="footer3">
+  </div>
+</body>
+</html>
