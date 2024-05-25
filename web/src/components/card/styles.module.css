@@ -4,6 +4,7 @@
   border-radius: 8px;
   background-color: var(--cinzaClaro);
   padding: 6px;
+  opacity: 0.85;
 }
 
 .cardWrapper:nth-child(3n + 1){
@@ -23,6 +24,7 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
+  opacity: 1;
 }
 
 .cardHeader {

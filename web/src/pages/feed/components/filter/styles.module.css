@@ -1,0 +1,30 @@
+.filterSection {
+  width: 26%;
+  background-color: var(--cinzaClaro);
+  padding: 16px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.nameFilter {
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: .5em;
+}
+
+.filterOptions {
+  list-style-type: none;
+}
+
+@media (max-width: 960px) {
+  .filterSection {
+    display: none;
+  }
+}
