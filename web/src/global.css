@@ -1,0 +1,31 @@
+:root {
+  /*Acrescentar cores e fontes padrão*/
+  --branco: #fff;
+  --preto: #000;
+  --verde: #00A959;
+  --vermelho: #EC3138;
+  --amarelo: #FFCC29;
+  --azul: #4C8EDF;
+  --cinzaClaro: #F9F9F9;
+  --cinzaMedio: #EBEBEB;
+  --cinzaEscuro: #8B8B8B;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--branco);
+  font-family: Arial, sans-serif;
+  color: var(--preto);
+  font-weight: 400;
+  width: 100vw;
+  height: 100vh;
+}
+
+main, header, footer {
+  margin: 0px 40px;
+}

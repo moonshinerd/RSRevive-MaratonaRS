@@ -1,0 +1,35 @@
+.headerWrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 16px;
+}
+
+.logo {
+  height: 40px;
+}
+
+.userNavigation {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.userIcon {
+  height: 40px;
+  width: 36px;
+  object-fit: cover;
+}
+
+.hamburger{
+  height: 24px;
+  width: 24px;
+}
+
+@media (min-width: 960px) {
+  .headerWrapper {
+    max-width: 60vw;
+    margin: auto;
+  }
+}
