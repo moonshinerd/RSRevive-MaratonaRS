@@ -2,6 +2,7 @@ import React from 'react';
 import { Header } from '../../components/header';
 import { Footer } from '../../components/footer';
 import { Card } from '../../components/card';
+import { Filter } from './components/filter';
 
 import styles from './styles.module.css'
 
@@ -28,15 +29,17 @@ export const Feed = () => {
             <span className={styles.filterLink}>Ordenação</span>
           </div>
         </div>
-        <div className={styles.cardsWrapper}>
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
+        <div className={styles.cardsFilterContainer}>
+          <Filter />
+          <div className={styles.cardsWrapper}>
+            <Card />
+            <Card />
+            <Card />
+            <Card />
+            <Card />
+            <Card />
+          </div>
         </div>
-
       </main>
       <Footer />
     </>

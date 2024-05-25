@@ -62,9 +62,37 @@
 }
 
 .cardsWrapper {
-  margin-top: 24px;
   display: flex;
   align-items: center;
   flex-direction: column;
   gap: 12px;
+  flex: 1;
+}
+
+.cardsFilterContainer {
+  margin-top: 24px;
+  display: flex;
+  width: 100%;
+  align-items: flex-start;
+  gap: 32px;
+}
+
+
+@media (min-width: 960px) {
+  .filterLink:nth-child(1) {
+    display: none;
+  }
+
+  .filtersLinksWrapper {
+    width: auto;
+  }
+
+  .filtersWrapper {
+    flex-direction: row;
+    gap: 24px;
+  }
+
+  .buttonsWrapper {
+    gap: 32px;
+  }
 }
