@@ -1,12 +1,23 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Header } from '../../components/header';
 import { Footer } from '../../components/footer';
 import { Card } from '../../components/card';
 import { Filter } from './components/filter';
+import { api } from '../../services/api.service'
 
 import styles from './styles.module.css'
 
 export const Feed = () => {
+
+  async function getCursos(){
+    const {data: cursosData} = await api.get('/cursos');
+    console.log(cursosData)
+  }
+
+  useEffect(() => {
+    getCursos();
+  }, []);
+
   return (
     <>
       <Header />

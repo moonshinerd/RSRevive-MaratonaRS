@@ -53,6 +53,43 @@ app.post('/login', (req, res) => {
   });
 });
 
+// Rota de registro
+app.post('/register', (req, res) => {
+  const { nome, telefone, cidade, email, senha } = req.body;
+  
+  db.get('SELECT * FROM Usuario WHERE email = ?', [email], (err, row) => {
+    if (err) {
+      res.status(500).json({ error: 'Erro no servidor' });
+    } else if (row) {
+      res.json({ message: 'Este email já está sendo utilizado' });
+    } else {
+      const currentDate = new Date().toISOString();
+      db.run(
+        'INSERT INTO Usuario (nome, telefone, cidade, email, senha, data_criacao) VALUES (?, ?, ?, ?, ?, ?)',
+        [nome, telefone, cidade, email, senha, currentDate],
+        (err) => {
+          if (err) {
+            res.status(500).json({ error: 'Erro ao criar usuario'});
+          } else {
+            res.status(201).json({ message: 'Usuario registrado com sucesso'});
+          }
+        }
+      )
+    }
+  });
+});
+
+// Rota de obtenção dos dados
+app.get('/cursos', (req, res) => {
+  db.get('SELECT * FROM Cursos', (err, row) => {
+    if (err) {
+      res.status(500).json({ error: 'Erro no servidor' });
+    } else if (row) {
+      res.send(row);
+    }
+  });
+});
+
 const PORT = 5000;
 app.listen(PORT, () => {
   console.log(`Servidor rodando na porta ${PORT}`);
