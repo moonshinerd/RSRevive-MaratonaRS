@@ -9,6 +9,7 @@ import { Feed } from './pages/feed/index.jsx';
 import { Landing } from './pages/landing/index.jsx';
 import './global.css'
 import './responsive.css'
+import { Home } from './pages/home/index.jsx';
 
 const router = createBrowserRouter([
   {
@@ -18,7 +19,11 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <Feed />
-  }
+  },
+  {
+    path: "/Home",
+    element: <Home />
+  },
 ])
 
 ReactDOM.createRoot(document.getElementById('root')).render(
