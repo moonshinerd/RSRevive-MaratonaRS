@@ -39,6 +39,7 @@ const Home = () => {
         <p className={styles.txtCursos}>Nós do RS Revive entendemos a gravidade da trajédia e por isso, 
           criamos esse site que tem como propósito reunir cursos disponíveis gratuitamente para a população e ajudar o Rio Grande do Sul a REVIVER!</p>
       </div>
+      
       <div className={styles.containerOndeColhemos}>
           <img src={Logo} alt="Logo" className={styles.logo1} />
           <h1 className={styles.containerOndeColhemostxt}>Onde colhemos os cursos?</h1>
@@ -59,13 +60,19 @@ const Home = () => {
               <img
                 src={item.image}
                 alt="Slider"
-                className={styles.slide-item}
+                className="slide-item"
               />
             </SwiperSlide>
           ))}
         </Swiper>
       </div>
 
+      <div className={styles.containerOportunidades}>
+          <img src={Logo} alt="Logo" className={styles.logo2} />
+          <h1 className={styles.containerOportunidadestxt}>Oportunidades</h1>
+      </div>
+      <div className={styles.oportunidades}><p className={styles.oportunidadestxt1}>Sabemos também que nesse momento o que mais precisamos são de oportunidades, seja para ajudar ou seja ajudado. Por isso também reunimos aqui oportunidades de emprego e voluntariado.</p>
+      </div>
 
     </div>
   );
