@@ -5,6 +5,8 @@ import FotoRs from '../../assets/FotoRs.jpeg';
 import Logo from '../../assets/Logo.png';
 import { register } from 'swiper/element/bundle';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { Header } from '../../components/header';
+
 
 register();
 import 'swiper/css';
@@ -22,6 +24,7 @@ const Home = () => {
 
   return (
     <div>
+      <Header></Header>
       <div className={styles.container}>
         <img src={FotoRs} alt="FotoRs" className={styles.image} />
         <div className={styles.contribua}>
