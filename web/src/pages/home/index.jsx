@@ -77,6 +77,18 @@ const Home = () => {
         <p className={styles.oportunidadestxt1}>
           Sabemos também que nesse momento o que mais precisamos são de oportunidades, seja para ajudar ou seja ajudado. Por isso também reunimos aqui oportunidades de emprego e voluntariado.
         </p>
+      <div className={styles.oportunidades2}>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOTpUwomcRK8KLMFyxLBKgOP4UV9K1aOx5fxs3wHx6gkhABoat" alt='oportunidades' className={styles.foto1}/>
+        <div className= {styles.botex}>
+          <h2 className={styles.oportunidadestxt2}> 
+          <strong>Encontre sua vaga de emprego ou voluntariado</strong>
+          </h2>
+          <button className={styles.botaovaga}>
+            <h2 className={styles.vaga}>Procure já</h2>
+              <MoveRight className={styles.seta} />
+          </button>
+         </div>
+        </div>
         <br></br>
         <br></br>
       </div>

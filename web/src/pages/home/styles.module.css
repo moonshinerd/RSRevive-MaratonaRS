@@ -38,7 +38,7 @@
  
 }
 
-.doar {
+.doar, .vaga {
   color: #ffffff;
   font-size: 25px;
 }
@@ -152,6 +152,41 @@
 .oportunidadestxt1 {
   font-size: 20px;
 }
+
+.oportunidades2{
+  display: flex;
+  flex-direction: row;
+  margin-left: 10px;
+}
+
+.botex{
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+.oportunidadestxt2{
+  font-size: 30px;
+  margin-left: 10px;
+  max-width: 300px;
+}
+
+.foto1{
+  border-radius: 25px;
+  width: 300px;
+  height: auto;
+}
+
+.botaovaga {
+  width: 90%;
+  margin-top: 110px;
+  margin-left: 20px;
+  max-width: 200px;
+  height: auto;
+  background-color: #EC3138;
+  border-radius: 20px;
+  position: absolute; 
+}
+
 
 /* Media Queries */
 @media (min-width: 600px) {
