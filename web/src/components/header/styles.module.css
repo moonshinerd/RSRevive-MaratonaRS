@@ -34,3 +34,21 @@ html, body {
   font-size: 24px; /* Ajuste conforme necessário */
   cursor: pointer; /* Muda o cursor ao passar sobre o ícone */
 }
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  padding: 10px;
+}
+
+.menuItem {
+  color: white;
+  text-decoration: none;
+  padding: 10px 0;
+  transition: color 0.3s;
+}
+
+.menuItem:hover {
+  color: gray;
+}

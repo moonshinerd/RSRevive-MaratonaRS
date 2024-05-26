@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import styles from './styles.module.css'; // Importando o CSS
-import logo from './components/RSRevive.png';
 import { Header } from '../../components/header';
 export const Login = () => {
   const [username, setUsername] = useState('');

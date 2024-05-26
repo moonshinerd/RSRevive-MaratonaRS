@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import styles from './styles.module.css'; // Importando o CSS
 import logo from './components/RSRevive.png';
+import { Header } from '../../components/header';
 
 export const Register = () => {
   const [nome, setnome] = useState('');
@@ -36,12 +37,9 @@ export const Register = () => {
   };
 
   return (
+    <div>
+      <Header></Header>
     <div className={styles.container}>
-      <div className={styles.header}>
-        <div className={styles.logo}>
-          <img src={logo} alt="SOSRS Logo" width="180" height="50" />
-        </div>
-      </div>
       <div className={styles.container}>
         <div className={styles['register-form']}>
           <h2 style={{ color: 'black' }}>Registro</h2>
@@ -112,6 +110,7 @@ export const Register = () => {
       <div className={styles.footer1}></div>
       <div className={styles.footer2}></div>
       <div className={styles.footer3}></div>
+    </div>
     </div>
   );
 };
