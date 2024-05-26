@@ -1,19 +1,21 @@
-import React from 'react'
-import style from './styles.module.css'
-import logo from '../../assets/logo.svg'
-import user from '../../assets/user.png'
+import React from 'react';
+import style from './styles.module.css';
+import logo from './assets/RSRevive.png';
 import { FiAlignJustify } from "react-icons/fi";
 
 export const Header = () => {
   return (
     <header className={style.headerWrapper}>
-      <div>
-        <img src={logo} alt="" className={style.logo}/>
-      </div>
-      <div className={style.userNavigation}>
-        <img src={user} alt="" className={style.userIcon}/>
-        <FiAlignJustify className={style.hamburger}/>
+      <div className={style.header}>
+        <div className={style.logo}>
+          <a href="/home">
+            <img src={logo} alt="SOSRS Logo" width="180" height="50" />
+          </a>
+        </div>
+        <div className={style.hamburger}>
+          <FiAlignJustify />
+        </div>
       </div>
     </header>
-  )
-}
+  );
+};

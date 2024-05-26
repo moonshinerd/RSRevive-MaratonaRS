@@ -1,35 +1,36 @@
+/* Define que o body e o html ocupam toda a altura da página */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Estilos para o headerWrapper */
 .headerWrapper {
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  justify-content: space-between;
-  padding-top: 16px;
+  width: 100%;
+  background-color: black; /* Define a cor de fundo preta */
+  padding: 0;
+  margin: 0;
 }
 
+/* Estilos para o header */
+.header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Ajuste conforme necessário */
+  padding: 10px; /* Ajuste conforme necessário */
+  box-sizing: border-box; /* Garante que o padding seja incluído na largura total */
+  color: white; /* Define a cor do texto branca para melhor contraste */
+}
+
+/* Estilos para o logo */
 .logo {
-  height: 40px;
+  height: 50px; /* Ajuste conforme necessário */
 }
 
-.userNavigation {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.userIcon {
-  height: 40px;
-  width: 36px;
-  object-fit: cover;
-}
-
-.hamburger{
-  height: 24px;
-  width: 24px;
-}
-
-@media (min-width: 960px) {
-  .headerWrapper {
-    max-width: 60vw;
-    margin: auto;
-  }
+.hamburger {
+  font-size: 24px; /* Ajuste conforme necessário */
+  cursor: pointer; /* Muda o cursor ao passar sobre o ícone */
 }
