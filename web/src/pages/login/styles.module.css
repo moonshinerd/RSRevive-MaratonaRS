@@ -76,7 +76,7 @@ body {
 }
 
 .footer1 {
-  height: 30px;
+  height: 50px;
   background-color: #00a859;
   left: 0;
   position: fixed;
@@ -85,7 +85,7 @@ body {
 }
 
 .footer2 {
-  height: 30px;
+  height: 50px;
   background-color: #ed3238;
   position: absolute;
   left: 34%;
@@ -94,7 +94,7 @@ body {
 }
 
 .footer3 {
-  height: 30px;
+  height: 50px;
   background-color: #ffcc29;
   position: absolute;
   right: 0;
