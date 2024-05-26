@@ -2,8 +2,10 @@ import React from 'react';
 import styles from './styles.module.css'
 import { MoveRight } from 'lucide-react';
 import FotoRs from '../../assets/FotoRs.jpeg';
+import imgOportunidades from '../../assets/imgOportunidades.jpg';
+
 import Logo from '../../assets/Logo.png';
-//baixei o swipper npm install swiper
+///baixei o swipper npm install swiper
 import {register} from 'swiper/element/bundle'
 import {Swiper, SwiperSlide} from 'swiper/react';
 
@@ -72,6 +74,7 @@ const Home = () => {
           <h1 className={styles.containerOportunidadestxt}>Oportunidades</h1>
       </div>
       <div className={styles.oportunidades}><p className={styles.oportunidadestxt1}>Sabemos também que nesse momento o que mais precisamos são de oportunidades, seja para ajudar ou seja ajudado. Por isso também reunimos aqui oportunidades de emprego e voluntariado.</p>
+      <img src={imgOportunidades} alt="imgOportunidades" className={styles.imageOportunidades} />
       </div>
 
     </div>
