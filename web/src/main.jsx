@@ -7,6 +7,7 @@ import {
 
 import { Feed } from './pages/feed/index.jsx';
 import { Landing } from './pages/landing/index.jsx';
+import { Login } from './pages/login/index.jsx';
 import './global.css'
 import './responsive.css'
 
@@ -18,6 +19,10 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <Feed />
+  },
+  {
+    path: "/login",
+    element: <Login />
   }
 ])
 
