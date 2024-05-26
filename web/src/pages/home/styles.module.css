@@ -58,11 +58,13 @@
 .containerCursos {
   width: 90%;
   max-width: 410px;
+  height: 75px;
   background-color: #d9d9d9;
   display: flex;
   align-items: center;
-  padding: 20px;
   margin: 20px 0;
+  margin-left: 5%;
+  margin-top: 10%;
 }
 
 .logo {
@@ -82,13 +84,13 @@
 }
 
 .containerOndeColhemos {
-  width: 90%;
+  width: 95%;
   max-width: 700px;
   background-color: #d9d9d9;
   display: flex;
   align-items: center;
-  padding: 20px;
   margin: 20px 0;
+  margin-bottom: 20%;
 }
 
 .logo1 {
@@ -98,18 +100,19 @@
 }
 
 .containerOndeColhemostxt {
-  font-size: 30px;
+  font-size: 20px;
 }
 
 .Slider {
-  width: 90%;
+  width: 80%;
   max-width: 600px;
-  height: 300px;
+  height: 200px;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #4c8edf;
+  background-color: --branco;
   margin: 20px auto;
+  overflow: hidden;
 }
 
 .slide-item {
@@ -118,14 +121,15 @@
   object-fit: cover;
 }
 
+
 .containerOportunidades {
-  width: 90%;
-  max-width: 410px;
+  width: 95%;
+  max-width: 700px;
   background-color: #d9d9d9;
   display: flex;
   align-items: center;
-  padding: 20px;
   margin: 20px 0;
+  margin-top: 20%;
 }
 
 .logo2 {
@@ -135,7 +139,8 @@
 }
 
 .containerOportunidadestxt {
-  font-size: 30px;
+  font-size: 20px;
+  margin-left: -10%;
 }
 
 .oportunidades {
@@ -193,6 +198,8 @@
   .containerOndeColhemos,
   .containerOportunidades {
     width: 700px;
+    height: 100px;
+    margin-left: 5%;
   }
 
   .logo,
@@ -212,4 +219,20 @@
   .oportunidadestxt1 {
     font-size: 40px;
   }
+
+  .Slider {
+    width: 80%;
+    max-width: 600px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: --branco;
+    margin: 20px auto;
+    overflow: hidden;
+  }
+  
 }
+
+
+

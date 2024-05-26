@@ -16,7 +16,8 @@ const Home = () => {
     { id: '1', image: 'https://www.diariodecontagem.com.br/fotos/materias/28032024085232_cursos-1.jpg' },
     { id: '2', image: 'https://i.insider.com/624ccb21f5c9cc00184f1389?width=600' },
     { id: '3', image: 'https://s1.static.brasilescola.uol.com.br/be/vestibular/fgv.jpg' },
-    { id: '4', image: 'https://static.wixstatic.com/media/2a25c7_fae4a0eb329f4f83b02f9bf88fcd3657~mv2.png/v1/fill/w_640,h_242,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/2a25c7_fae4a0eb329f4f83b02f9bf88fcd3657~mv2.png' }
+    { id: '4', image: 'https://static.wixstatic.com/media/2a25c7_fae4a0eb329f4f83b02f9bf88fcd3657~mv2.png/v1/fill/w_640,h_242,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/2a25c7_fae4a0eb329f4f83b02f9bf88fcd3657~mv2.png' },
+    { id: '5', image: 'https://themosvagas.com.br/wp-content/uploads/2021/08/fundacao-bradesco-1-600x400.png' }
   ];
 
   return (
