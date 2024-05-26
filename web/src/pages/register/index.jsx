@@ -3,9 +3,9 @@ import styles from './styles.module.css'; // Importando o CSS
 import logo from './components/RSRevive.png';
 
 export const Register = () => {
-  const [fnome, setFnome] = useState('');
+  const [nome, setnome] = useState('');
   const [telefone, setTelefone] = useState('');
-  const [fcidade, setFcidade] = useState('');
+  const [cidade, setcidade] = useState('');
   const [email, setEmail] = useState('');
   const [senha, setSenha] = useState('');
   const [error, setError] = useState('');
@@ -19,7 +19,7 @@ export const Register = () => {
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify({ fnome, telefone, fcidade, email, senha }),
+        body: JSON.stringify({ nome, telefone, cidade, email, senha }),
       });
 
       const data = await response.json();
@@ -48,13 +48,13 @@ export const Register = () => {
           {error && <p style={{ color: 'red' }}>{error}</p>}
           <form onSubmit={handleRegister}>
             <div className={styles['input-field']}>
-              <label htmlFor="fnome" style={{ color: 'black' }}>Nome:</label>
+              <label htmlFor="nome" style={{ color: 'black' }}>Nome:</label>
               <input 
                 type="text" 
-                id="fnome" 
-                name="fnome" 
-                value={fnome}
-                onChange={(e) => setFnome(e.target.value)}
+                id="nome" 
+                name="nome" 
+                value={nome}
+                onChange={(e) => setnome(e.target.value)}
                 required
               />
             </div>
@@ -71,13 +71,13 @@ export const Register = () => {
               />
             </div>
             <div className={styles['input-field']}>
-              <label htmlFor="fcidade" style={{ color: 'black' }}>Cidade:</label>
+              <label htmlFor="cidade" style={{ color: 'black' }}>Cidade:</label>
               <input 
                 type="text" 
-                id="fcidade" 
-                name="fcidade" 
-                value={fcidade}
-                onChange={(e) => setFcidade(e.target.value)}
+                id="cidade" 
+                name="cidade" 
+                value={cidade}
+                onChange={(e) => setcidade(e.target.value)}
                 required
               />
             </div>
