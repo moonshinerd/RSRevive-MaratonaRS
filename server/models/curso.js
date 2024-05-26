@@ -7,7 +7,8 @@ const createCursoTable = () => {
     area TEXT,
     duracao TEXT,
     descricao TEXT,
-    conteudo TEXT
+    conteudo TEXT,
+    link_do_curso TEXT
   );`, (err) => {
     if (err) {
       console.error('Erro ao criar tabela Cursos:', err.message);
