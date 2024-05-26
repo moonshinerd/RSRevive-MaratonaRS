@@ -11,6 +11,7 @@ import { Login } from './pages/login/index.jsx';
 import { Register } from './pages/register/index.jsx';
 import './global.css'
 import './responsive.css'
+import { Home } from './pages/home/index.jsx';
 
 const router = createBrowserRouter([
   {
@@ -22,6 +23,9 @@ const router = createBrowserRouter([
     element: <Feed />
   },
   {
+    path: "/home",
+    element: <Home />
+  },
     path: "/login",
     element: <Login />
   },
