@@ -1,154 +1,215 @@
 .container {
-    margin-top: 200px;
-    display: flex;
-    align-items: center;
+  margin-top: 200px;
+  display: flex;
+  align-items: center;
+  flex-direction: column; 
+}
+
+.image {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  margin-right: 10%;
+  margin-left: 10%;
+}
+
+.contribua {
+  width: 90%;
+  max-width: 445px;
+  padding: 10px;
+  background-color: #EC3138;
+  border-radius: 30px;
+  text-align: center;
+  margin: 20px 0;
+  position: relative;
+}
+
+.botaocontribua {
+  width: 90%;
+  max-width: 445px;
+  height: auto;
+  background-color: #EC3138;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute; /* Define posição absoluta */
+  top: 105%;
+ 
+}
+
+.doar {
+  color: #ffffff;
+  font-size: 25px;
+}
+
+.seta {
+  width: 50px;
+  height: 30px;
+  color: #ffffff;
+  margin-left: 10px;
+}
+
+.textocontribua {
+  color: #ffffff;
+  font-size: 30px;
+}
+
+.containerCursos {
+  width: 90%;
+  max-width: 410px;
+  background-color: #d9d9d9;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  margin: 20px 0;
+}
+
+.logo {
+  width: 50%;
+  height: auto;
+  margin-right: 10px;
+}
+
+.containerCursostxt {
+  font-size: 30px;
+}
+
+.txtCursos {
+  margin: 20px 5%;
+  font-size: 20px;
+  width: 90%;
+}
+
+.containerOndeColhemos {
+  width: 90%;
+  max-width: 700px;
+  background-color: #d9d9d9;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  margin: 20px 0;
+}
+
+.logo1 {
+  width: 50%;
+  height: auto;
+  margin-right: 10px;
+}
+
+.containerOndeColhemostxt {
+  font-size: 30px;
+}
+
+.Slider {
+  width: 90%;
+  max-width: 600px;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #4c8edf;
+  margin: 20px auto;
+}
+
+.slide-item {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.containerOportunidades {
+  width: 90%;
+  max-width: 410px;
+  background-color: #d9d9d9;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  margin: 20px 0;
+}
+
+.logo2 {
+  width: 50%;
+  height: auto;
+  margin-right: 10px;
+}
+
+.containerOportunidadestxt {
+  font-size: 30px;
+}
+
+.oportunidades {
+  margin: 20px 5%;
+  width: 90%;
+  height: auto;
+}
+
+.oportunidadestxt1 {
+  font-size: 20px;
+}
+
+/* Media Queries */
+@media (min-width: 600px) {
+  .textocontribua {
+    font-size: 30px;
   }
-  
-  .image {
-    width: 600px;
-    height: 400px;
-    margin-right: 10%;
-    margin-left: 10%;
+
+  .containerCursostxt,
+  .containerOndeColhemostxt,
+  .containerOportunidadestxt {
+    font-size: 40px;
   }
-  
+
+  .txtCursos,
+  .oportunidadestxt1 {
+    font-size: 40px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    flex-direction: row;
+    margin-top: 100px;
+  }
+
   .contribua {
     width: 434px;
     height: 195px;
-    margin-bottom: 10%;
-    background-color: #EC3138;
-    border-radius: 30px;
   }
 
-  .botaocontribua{
+  .botaocontribua {
     width: 300px;
     height: 106px;
-    background-color: #EC3138;
-    border-radius: 30px;
-    margin-top: 20%;
-    margin-left: 15% ;
-    display: flex;
+    margin-left: 15%;
+    
+    
   }
 
-  .doar{
-    color: #ffffff;
-    font-size: 25px;
-    margin-top: 12%;
-    margin-left: 30%;  
-  }
-
-  .seta{
-    width: 50px;
-    height: 30px;
-    margin-top: 12%;
-    color: #ffffff;
-    margin-left: 10%;
-
-  }
-  
-  .textocontribua{
-    color: #ffffff;
+  .textocontribua {
     font-size: 40px;
-    text-align: center;
-    margin-top: 5%;
   }
 
-  .containerCursos{
-    width: 410px;
-    height: 100px;
-    background-color: #d9d9d9 ;
-    margin-top: 10%;
-    margin-left: 5%;
-    display: flex;
-
-  }
-
-  .logo{
-    width: 208px;
-    height: 188px;
-    margin-top: -10%;
-    margin-left: -8%;
-  }
-
-  .containerCursostxt {
-    font-size: 40px;
-    margin-top: 6%;
-    margin-left: -5%;
-  }
-
-  .txtCursos{
-    margin-top: 5%;
-    margin-left: 5%;
-    font-size: 40px;
-    width: 1200px;
-  }
-
-  .containerOndeColhemos{
+  .containerCursos,
+  .containerOndeColhemos,
+  .containerOportunidades {
     width: 700px;
-    height: 100px;
-    background-color: #d9d9d9 ;
-    margin-top: 5%;
-    margin-left: 5%;
-    display: flex;
   }
-  .logo1{
+
+  .logo,
+  .logo1,
+  .logo2 {
     width: 208px;
     height: 188px;
-    margin-top: -6%;
-    margin-left: -4%;
   }
 
-  .containerOndeColhemostxt{
-    font-size: 40px;
-    margin-top: 5%;
-    margin-left: -5%;
-    
-  }
-
-  .Slider {
-    width: 600px;
-    height: 400px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #4c8edf;
-    margin-top: 5%;
-    transform: translate(60%); /* Move o contêiner para centralizá-lo completamente */       
-    
-  }
-  
-  .slide-item {             
-    width: 100%; 
-    height: 100%; 
-    object-fit: cover;
-         
-  }
-
-  .containerOportunidades{
-    width: 410px;
-    height: 100px;
-    margin-top: 5%;
-    margin-left: 5%;
-    background-color: #d9d9d9;
-  }
-    
-  .logo2{
-    margin-top: -11%;
-    margin-left: -10%;
-  }
-  .containerOportunidadestxt{
-    margin-left: 35%;
-    margin-top: -27%;
-    width: 0px;
-    height: 0px;
-  }
-
-  .oportunidades{
-    margin-left: 5%;
-    margin-top: 5%;
-    width: 1200px;
-    height: 20px;
-  }
-
-  .oportunidadestxt1{
+  .containerCursostxt,
+  .containerOndeColhemostxt,
+  .containerOportunidadestxt {
     font-size: 40px;
   }
+
+  .txtCursos,
+  .oportunidadestxt1 {
+    font-size: 40px;
+  }
+}
