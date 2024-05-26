@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import styles from './styles.module.css'; // Importando o CSS
 import { Header } from '../../components/header';
+import { Footer } from '../../components/footer';
+
 export const Login = () => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
@@ -71,10 +73,8 @@ export const Login = () => {
             </div>
           </div>
         </div>
-        <div className={styles.footer1}></div>
-        <div className={styles.footer2}></div>
-        <div className={styles.footer3}></div>
       </div>
+      <Footer></Footer>
     </div>
   );
 };

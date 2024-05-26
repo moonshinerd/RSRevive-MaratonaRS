@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import styles from './styles.module.css'; // Importando o CSS
 import { Header } from '../../components/header';
+import { Footer } from '../../components/footer';
 
 export const Register = () => {
   const [nome, setnome] = useState('');
@@ -106,10 +107,8 @@ export const Register = () => {
           </form>
         </div>
       </div>
-      <div className={styles.footer1}></div>
-      <div className={styles.footer2}></div>
-      <div className={styles.footer3}></div>
     </div>
+    <Footer></Footer>
     </div>
   );
 };

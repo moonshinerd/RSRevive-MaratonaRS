@@ -6,6 +6,7 @@ import Logo from '../../assets/Logo.png';
 import { register } from 'swiper/element/bundle';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Header } from '../../components/header';
+import { Footer } from '../../components/footer';
 
 
 register();
@@ -76,7 +77,10 @@ const Home = () => {
         <p className={styles.oportunidadestxt1}>
           Sabemos também que nesse momento o que mais precisamos são de oportunidades, seja para ajudar ou seja ajudado. Por isso também reunimos aqui oportunidades de emprego e voluntariado.
         </p>
+        <br></br>
+        <br></br>
       </div>
+      <Footer></Footer>
     </div>
   );
 };

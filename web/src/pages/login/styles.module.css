@@ -75,29 +75,3 @@ body {
   cursor: pointer;
 }
 
-.footer1 {
-  height: 50px;
-  background-color: #00a859;
-  left: 0;
-  position: fixed;
-  bottom: 0;
-  width: 34%;
-}
-
-.footer2 {
-  height: 50px;
-  background-color: #ed3238;
-  position: absolute;
-  left: 34%;
-  bottom: 0;
-  width: 32%;
-}
-
-.footer3 {
-  height: 50px;
-  background-color: #ffcc29;
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  width: 34%;
-}
