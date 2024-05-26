@@ -5,6 +5,9 @@ import FotoRs from '../../assets/FotoRs.jpeg';
 import Logo from '../../assets/Logo.png';
 import { register } from 'swiper/element/bundle';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { Header } from '../../components/header';
+import { Footer } from '../../components/footer';
+
 
 register();
 import 'swiper/css';
@@ -22,6 +25,7 @@ const Home = () => {
 
   return (
     <div>
+      <Header></Header>
       <div className={styles.container}>
         <img src={FotoRs} alt="FotoRs" className={styles.image} />
         <div className={styles.contribua}>
@@ -73,7 +77,10 @@ const Home = () => {
         <p className={styles.oportunidadestxt1}>
           Sabemos também que nesse momento o que mais precisamos são de oportunidades, seja para ajudar ou seja ajudado. Por isso também reunimos aqui oportunidades de emprego e voluntariado.
         </p>
+        <br></br>
+        <br></br>
       </div>
+      <Footer></Footer>
     </div>
   );
 };
