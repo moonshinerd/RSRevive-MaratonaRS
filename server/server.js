@@ -41,7 +41,7 @@ app.use(cors());
 // Rota de login
 app.post('/login', (req, res) => {
   const { username, password } = req.body;
-  
+
   db.get('SELECT * FROM Usuario WHERE email = ? AND senha = ?', [username, password], (err, row) => {
     if (err) {
       res.status(500).json({ error: 'Erro no servidor' });
@@ -56,7 +56,7 @@ app.post('/login', (req, res) => {
 // Rota de registro
 app.post('/register', (req, res) => {
   const { nome, telefone, cidade, email, senha } = req.body;
-  
+
   db.get('SELECT * FROM Usuario WHERE email = ?', [email], (err, row) => {
     if (err) {
       res.status(500).json({ error: 'Erro no servidor' });
@@ -81,12 +81,15 @@ app.post('/register', (req, res) => {
 
 // Rota de obtenção dos dados
 app.get('/cursos', (req, res) => {
-  db.get('SELECT * FROM Cursos', (err, row) => {
+  let result = []
+  db.each('SELECT * FROM Cursos', (err, row) => {
     if (err) {
       res.status(500).json({ error: 'Erro no servidor' });
     } else if (row) {
-      res.send(row);
+      result.push(row);
     }
+  }, () => {
+    res.status(200).send(result)
   });
 });
 

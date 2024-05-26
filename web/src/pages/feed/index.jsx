@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Header } from '../../components/header';
 import { Footer } from '../../components/footer';
 import { Card } from '../../components/card';
@@ -9,13 +9,16 @@ import styles from './styles.module.css'
 
 export const Feed = () => {
 
+  const [cursos, setCursos] = useState([]);
+
   async function getCursos(){
     const {data: cursosData} = await api.get('/cursos');
-    console.log(cursosData)
+    setCursos(cursosData);
   }
 
   useEffect(() => {
     getCursos();
+    console.log(cursos)
   }, []);
 
   return (
@@ -43,12 +46,11 @@ export const Feed = () => {
         <div className={styles.cardsFilterContainer}>
           <Filter />
           <div className={styles.cardsWrapper}>
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
+            {
+              cursos.map((item) => {
+                return <Card key={item.id} {...item}/>
+              })
+            }
           </div>
         </div>
       </main>

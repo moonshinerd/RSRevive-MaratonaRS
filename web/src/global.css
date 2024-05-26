@@ -1,11 +1,11 @@
-de:root {
+:root {
   /*Acrescentar cores e fontes padrão*/
   --branco: #fff;
   --preto: #000;
   --verde: #00A959;
   --vermelho: #EC3138;
   --amarelo: #FFCC29;
-  --azul: #4C8EDF;
+  --azul: #1c5396;
   --cinzaClaro: #F9F9F9;
   --cinzaMedio: #EBEBEB;
   --cinzaEscuro: #8B8B8B;

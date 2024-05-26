@@ -95,4 +95,8 @@
   .buttonsWrapper {
     gap: 32px;
   }
+
+  .cardsWrapper {
+    gap: 16px;
+  }
 }
