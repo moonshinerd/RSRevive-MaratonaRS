@@ -71,7 +71,7 @@ export const Login = () => {
           <div style={{ marginTop: '15px' }} className={styles.links}>
             <a href="#">Esqueceu a senha?</a>
             <a> | </a>
-            <a href="#">Não tem cadastro?</a>
+            <a href="/register">Não tem cadastro?</a>
           </div>
         </div>
       </div>

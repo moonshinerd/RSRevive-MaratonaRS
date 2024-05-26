@@ -8,6 +8,7 @@ import {
 import { Feed } from './pages/feed/index.jsx';
 import { Landing } from './pages/landing/index.jsx';
 import { Login } from './pages/login/index.jsx';
+import { Register } from './pages/register/index.jsx';
 import './global.css'
 import './responsive.css'
 
@@ -23,6 +24,10 @@ const router = createBrowserRouter([
   {
     path: "/login",
     element: <Login />
+  },
+  {
+    path: "/register",
+    element: <Register />
   }
 ])
 
