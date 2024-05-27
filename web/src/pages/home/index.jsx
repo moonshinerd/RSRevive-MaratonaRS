@@ -7,12 +7,13 @@ import { register } from 'swiper/element/bundle';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Header } from '../../components/header';
 import { Footer } from '../../components/footer';
-
-
-register();
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/scrollbar';
+
+
+register();
+
 
 const Home = () => {
   const data = [
@@ -55,7 +56,7 @@ const Home = () => {
           slidesPerView={1}
           pagination={{ clickable: true }}
           navigation={{ clickable: true }}
-          autoplay={{ delay: 5000 }}
+          /*autoplay={{ delay: 5000 }}*/
           loop={true}
         >
           {data.map((item) => (

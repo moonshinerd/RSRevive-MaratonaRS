@@ -44,7 +44,7 @@
 }
 
 .seta {
-  width: 50px;
+  width: 20px;
   height: 30px;
   color: #ffffff;
   margin-left: 10px;
@@ -165,28 +165,40 @@
   margin-left: 20px;
 }
 .oportunidadestxt2{
-  font-size: 30px;
+  font-size: 10px;
   margin-left: 10px;
   max-width: 300px;
+  margin-left: 10%;
 }
 
 .foto1{
-  border-radius: 25px;
-  width: 300px;
+  width: 50%;
+  max-width: 600px;
   height: auto;
+  margin-right: 10%;
+  margin-left: 2%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  border-radius: 25px;
+  margin-bottom: 20%;
 }
 
 .botaovaga {
-  width: 90%;
-  margin-top: 110px;
-  margin-left: 20px;
+  width: 30%;
+  margin-top: 20%;
+  margin-left: 0%;
   max-width: 200px;
-  height: auto;
+  height: 10%;
+  max-height: 60px;
   background-color: #EC3138;
   border-radius: 20px;
   position: absolute; 
 }
 
+.vaga{
+  font-size: 10px;
+  margin-top: 10%;
+}
 
 /* Media Queries */
 @media (min-width: 600px) {
@@ -265,6 +277,44 @@
     background-color: --branco;
     margin: 20px auto;
     overflow: hidden;
+  }
+  .oportunidadestxt2{
+    font-size: 30px;
+    margin-left: 10px;
+    max-width: 300px;
+    margin-top: 50%;
+  }
+  .foto1{
+    width: 50%;
+    max-width: 600px;
+    height: auto;
+    margin-right: 10%;
+    margin-left: 10%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    border-radius: 25px;
+  }
+
+  .botaovaga {
+    width: 90%;
+    margin-top: 18%;
+    max-width: 200px;
+    height: auto;
+    background-color: #EC3138;
+    border-radius: 20px;
+    position: absolute; 
+  }
+
+  .vaga{
+    font-size: 25px;
+    margin-top: 1%;
+  }
+  
+  .seta {
+    width: 50px;
+    height: 30px;
+    color: #ffffff;
+    margin-left: 10px;
   }
   
 }
