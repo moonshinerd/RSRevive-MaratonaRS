@@ -93,6 +93,20 @@ app.get('/cursos', (req, res) => {
   });
 });
 
+// Rota de obtenção dos dados vagas
+app.get('/vagas', (req, res) => {
+  let result = []
+  db.each('SELECT * FROM Vaga', (err, row) => {
+    if (err) {
+      res.status(500).json({ error: 'Erro no servidor' });
+    } else if (row) {
+      result.push(row);
+    }
+  }, () => {
+    res.status(200).send(result)
+  });
+});
+
 const PORT = 5000;
 app.listen(PORT, () => {
   console.log(`Servidor rodando na porta ${PORT}`);

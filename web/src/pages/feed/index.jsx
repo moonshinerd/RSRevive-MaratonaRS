@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import { Header } from '../../components/header';
 import { Footer } from '../../components/footer';
-import { Card } from '../../components/card';
+import { Card } from '../../components/card/cursoscard';
 import { Filter } from './components/filter';
 import { api } from '../../services/api.service';
 import { Link, useLocation } from 'react-router-dom'
 import { Cursos } from './cursos';
+import { Vagas } from './vagas'
 
 import styles from './styles.module.css'
 
@@ -19,6 +20,10 @@ export const Feed = () => {
   async function getCursos(){
     const {data: cursosData} = await api.get('/cursos');
     setCursos(cursosData);
+  }
+  async function getVagas(){
+    const {data: vagaData} = await api.get('/vaga');
+    setCursos(vagaData);
   }
 
   useEffect(() => {
