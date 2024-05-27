@@ -14,7 +14,7 @@ export const Header = () => {
     <header className={style.headerWrapper}>
       <div className={style.header}>
         <div className={style.logo}>
-          <a href="/home">
+          <a href="/">
             <img src={logo} alt="SOSRS Logo" width="180" height="50" />
           </a>
         </div>
@@ -27,7 +27,7 @@ export const Header = () => {
           <a href="/login" className={style.menuItem}>Login</a>
           <a href="/vagas" className={style.menuItem}>Vagas</a>
           <a href="/cursos" className={style.menuItem}>Cursos</a>
-          <a href="/sobre-nos" className={style.menuItem}>Sobre Nós</a>
+          <a href="/aboutus" className={style.menuItem}>Sobre Nós</a>
         </div>
       )}
     </header>

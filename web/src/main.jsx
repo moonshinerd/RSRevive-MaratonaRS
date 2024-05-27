@@ -12,6 +12,7 @@ import { Register } from './pages/register/index.jsx';
 import './global.css'
 import './responsive.css'
 import { Home } from './pages/home/index.jsx';
+import { AboutUs } from './pages/aboutus/index.jsx';
 
 const router = createBrowserRouter([
   {
@@ -19,11 +20,11 @@ const router = createBrowserRouter([
     element: <Landing />
   },
   {
-    path: "/",
+    path: "/cursos",
     element: <Feed />
   },
   {
-    path: "/home",
+    path: "/",
     element: <Home />
   },
   {
@@ -33,6 +34,11 @@ const router = createBrowserRouter([
   {
     path: "/register",
     element: <Register />
+  }
+  ,
+  {
+    path: "/aboutus",
+    element: <AboutUs />
   }
 ])
 
