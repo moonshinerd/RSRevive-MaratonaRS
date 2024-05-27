@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react'
 import styles from './styles.module.css'
 import { Filter } from './components/filter'
-import { Card } from '../../components/card'
+import { Card } from '../../components/card/cursoscard.jsx'
 import { api } from '../../services/api.service'
 
 export const Cursos = () => {
