@@ -1,5 +1,4 @@
 /* styles.module.css */
-/* styles.module.css */
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&display=swap');
 
 /* styles.module.css */
@@ -14,7 +13,7 @@
   
   .graybox {
     background-color: #d9d9d9;
-    width: 10%;
+    width: 15%;
     height: 50%;
     display: flex;
     justify-content: center;
@@ -26,6 +25,46 @@
   .textbox {
     margin-top: 10px; /* Espaçamento entre a graybox e a caixa de texto */
     text-align: center; /* Alinhamento do texto */
-    font-family: 'DM Sans' Regular;
+    font-family: 'DM Sans' sans-serif;
+    font-weight: 100;
   }
   
+  .graybox1 {
+    background-color: #d9d9d9;
+    width: 25%;
+    height: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000000;
+    font-family: 'DM Sans', sans-serif;
+    position: absolute; /* Posição absoluta */
+    left: 5%; /* Alinhar à esquerda */
+    top: 30%; /* Alinhar ao centro verticalmente */
+    transform: translateY(-50%); /* Ajustar para o centro verticalmente */
+  }
+
+  .graybox2 {
+    background-color: #d9d9d9;
+    width: 65%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    color: #000000;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    position: absolute; /* Posição absoluta */
+    left: 5%; /* Alinhar à esquerda */
+    top: 45%; /* Alinhar ao centro verticalmente */
+    transform: translateY(-50%); /* Ajustar para o centro verticalmente */
+    
+  }
+  .marcos {
+    position: absolute; /* Define a posição absoluta */
+    top: 39%; /* Ajusta a posição verticalmente */
+    left: 75%; /* Ajusta a posição horizontalmente */
+    width: 20%;
+    height: 12%;
+  }
