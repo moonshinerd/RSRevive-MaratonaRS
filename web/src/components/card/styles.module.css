@@ -41,15 +41,18 @@
   align-items: flex-start;
   height: 100%;
   text-transform: uppercase;
-  margin-left: 1rem;
+  margin-left: 0.5rem;
+  flex-shrink: 1;
 }
 
 .subject {
   font-size: 13px;
-  width: 120px;
+  min-width: 60px;
+  max-width: 100px;
   text-align: center;
   color: var(--azul);
   font-weight: 700;
+  flex-shrink: 0;
 }
 
 .contents {

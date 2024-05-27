@@ -9,6 +9,8 @@
   margin-top: 30px;
   margin-bottom: 16px;
   font-size: 13px;
+  text-align: center;
+  text-decoration: none;
 }
 
 .navButton:nth-child(1) {

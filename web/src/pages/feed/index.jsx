@@ -3,12 +3,17 @@ import { Header } from '../../components/header';
 import { Footer } from '../../components/footer';
 import { Card } from '../../components/card';
 import { Filter } from './components/filter';
-import { api } from '../../services/api.service'
+import { api } from '../../services/api.service';
+import { Link, useLocation } from 'react-router-dom'
+import { Cursos } from './cursos';
 
 import styles from './styles.module.css'
 
 export const Feed = () => {
 
+  const useQuery = new URLSearchParams(useLocation().search);
+
+  const [page, setPage] = useState('cursos');
   const [cursos, setCursos] = useState([]);
 
   async function getCursos(){
@@ -18,7 +23,8 @@ export const Feed = () => {
 
   useEffect(() => {
     getCursos();
-    console.log(cursos)
+    const temp = useQuery.get("page");
+    //setPage(temp == null? "cursos" : 'temp');
   }, []);
 
   return (
@@ -26,33 +32,26 @@ export const Feed = () => {
       <Header />
       <main>
         <nav className={styles.buttonsWrapper}>
-          <button className={styles.navButton}>
+          <Link to="?page=cursos" className={[styles.navButton]} onClick={() => setPage('cursos')}>
             cursos
-          </button>
-          <button className={styles.navButton}>
+          </Link>
+          <Link to="?page=vagas" className={styles.navButton} onClick={() => setPage('vagas')}>
             vagas
-          </button>
-          <button className={styles.navButton}>
+          </Link>
+          <Link to="?page=voluntariado" className={styles.navButton} onClick={() => setPage('voluntariado')}>
             voluntariado
-          </button>
+          </Link>
         </nav>
-        <div className={styles.filtersWrapper}>
-          <input type='text' className={styles.input} placeholder='Pesquisar'/>
-          <div className={styles.filtersLinksWrapper}>
-            <span className={styles.filterLink}>Filtros</span>
-            <span className={styles.filterLink}>Ordenação</span>
-          </div>
-        </div>
-        <div className={styles.cardsFilterContainer}>
-          <Filter />
-          <div className={styles.cardsWrapper}>
-            {
-              cursos.map((item) => {
-                return <Card key={item.id} {...item}/>
-              })
-            }
-          </div>
-        </div>
+        {
+          page == 'cursos' &&
+          <Cursos cursos={cursos}/>
+        }
+        {
+          page == ''
+        }
+        {
+
+        }
       </main>
       <Footer />
     </>
