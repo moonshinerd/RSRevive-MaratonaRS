@@ -25,8 +25,8 @@ export const Header = () => {
       {menuOpen && (
         <div className={style.menu}>
           <a href="/login" className={style.menuItem}>Login</a>
-          <a href="/vagas" className={style.menuItem}>Vagas</a>
-          <a href="/cursos" className={style.menuItem}>Cursos</a>
+          <a href="/feed?page=vagas" className={style.menuItem}>Vagas</a>
+          <a href="/feed?page=cursos" className={style.menuItem}>Cursos</a>
           <a href="/aboutus" className={style.menuItem}>Sobre Nós</a>
         </div>
       )}
