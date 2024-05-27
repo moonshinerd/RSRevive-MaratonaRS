@@ -6,9 +6,9 @@ import { Filter } from './components/filter';
 import { api } from '../../services/api.service';
 import { Link, useLocation } from 'react-router-dom'
 import { Cursos } from './cursos';
-import { Vagas } from './vagas'
+import { Vagas } from './vagas';
 
-import styles from './styles.module.css'
+import styles from './styles.module.css';
 
 export const Feed = () => {
 
@@ -16,14 +16,15 @@ export const Feed = () => {
 
   const [page, setPage] = useState('cursos');
   const [cursos, setCursos] = useState([]);
-
+  const [vagas, setVagas] = useState([]);
+  
   async function getCursos(){
     const {data: cursosData} = await api.get('/cursos');
     setCursos(cursosData);
   }
   async function getVagas(){
     const {data: vagaData} = await api.get('/vaga');
-    setCursos(vagaData);
+    setVagas(vagaData);
   }
 
   useEffect(() => {
@@ -52,7 +53,8 @@ export const Feed = () => {
           <Cursos cursos={cursos}/>
         }
         {
-          page == ''
+          page == 'vagas' &&
+          <Vagas vagas={vagas}/>
         }
         {
 
